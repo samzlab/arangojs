@@ -10,7 +10,7 @@
 import { Errback } from "../types/errback.ts";
 import { ArangojsRequest, ArangojsResponse } from "../types/request.ts";
 import { ArangojsError } from "../types/request.ts";
-import { urlJoin } from "../../deps/url_join.ts";
+import urlJoin from "../../deps/url_join.ts";
 
 const omit = <T>(obj: T, keys: (keyof T)[]): T => {
   const result = {} as T;
@@ -137,7 +137,7 @@ const makeFetch = async ({
 
         headers["Accept"] = "application/json";
         headers["Content-Type"] = "application/json";
-      } catch (ex) {}
+      } catch (ex) { }
     }
   }
 
