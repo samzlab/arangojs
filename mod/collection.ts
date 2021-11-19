@@ -1,1 +1,1 @@
-export { DocumentCollection, EdgeCollection } from "../src/collection.ts";
+export type { DocumentCollection, EdgeCollection } from "../src/collection.ts";
