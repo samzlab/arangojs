@@ -1,5 +1,8 @@
 export {
-  aql,
+  aql
+} from "../src/aql.ts";
+
+export type {
   AqlQuery,
   GeneratedAqlQuery,
   AqlLiteral,
